@@ -1,0 +1,24 @@
+# Data
+data_care/
+universal_logs/
+results/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Model cache
+hf_cache/
+
+# Logs
+*.log
