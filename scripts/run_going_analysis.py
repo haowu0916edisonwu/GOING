@@ -494,11 +494,11 @@ def run_experiment_v3(data_dir: str):
         ds_result_entry["semantic"] = semantic
 
         print("\nBaselines:")
-        print("   [Semantic] (Prior Judgment):")
+        print("   [Semantic (Reactive)]:")
         print(f"       Perf: {format_metrics(semantic['scores'])}")
         print(f"       Mode: {semantic['mode_dist']}")
 
-        print("   [Heuristic] (v25):")
+        print("   [Prior Judgment] (v25):")
         print(f"       Perf: {format_metrics(v25['scores'])}")
         print(f"       Mode: {v25['mode_dist']}")
 
@@ -596,7 +596,7 @@ def run_experiment_v3(data_dir: str):
 
     print("\n" + "=" * 130)
     print(
-        f"{'DATASET':<12} {'METRIC':<10} {'SEMANTIC':<12} {'HEURISTIC':<12} "
+        f"{'DATASET':<12} {'METRIC':<10} {'SEMANTIC':<12} {'PRIOR JDGMT':<12} "
         f"{'NAIVE':<12} {'ITERATIVE':<12} {'GOING (OURS)':<15} {'ORACLE':<10}"
     )
     print("-" * 130)
